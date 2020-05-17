@@ -126,3 +126,5 @@ MEDIA_ROOT = '/home/airemove2/AI.remove/aisite/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/airemove2/AI.remove/aisite/static'
 STATIC_URL = '/static/'
+
+SECURE_SSL_REDIRECT = True
