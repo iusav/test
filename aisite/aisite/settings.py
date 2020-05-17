@@ -25,7 +25,7 @@ SECRET_KEY = '9n=t%$)+(*l%ssya=(t&$0!yyn#o#9e)s8mpo$p84*nd+%yfal'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['airemove2.pythonanywhere.com']
+ALLOWED_HOSTS = ['airemove2.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
