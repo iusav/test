@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html data-wf-page="5ecab3c1218ab78bdcece1b0" data-wf-site="5ecab3c1218ab780fbece1b1" data-wf-status="1"></html>
 <head>
   <meta charset="utf-8"/>
@@ -44,18 +45,7 @@
       </a><a href="#" class="app-button buy w-inline-block"><img src="https://uploads-ssl.webflow.com/5ecab3c1218ab780fbece1b1/5ecab3c1218ab705fbece1c0_app-store-google.png" width="141" alt=""/></a>
     </div>
   </div>
-  <!--<a href="#" class="button-4 w-button" type="submit">Upload my Video</a>-->
-    {% block content %}
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <input type="file" name="myfile" class="button-4 w-button">
-    <button type="submit" >Upload</button>
-  </form>
-
-  {% if uploaded_file_url %}
-    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
-  {% endif %}
-{% endblock %}
+  <a href="processor/" class="button-4 w-button">Upload my Video</a>
     </header>
 <section id="feature-section" class="feature-section">
   <div class="flex-container w-container">

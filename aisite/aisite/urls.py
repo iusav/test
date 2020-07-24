@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
+from django.conf.urls.static import static
 
 from . import views
 
@@ -22,4 +24,6 @@ urlpatterns = [
     path('', views.redirect_view),
     path('landpage/', include('landpage.urls')),
     path('admin/', admin.site.urls),
+    path('landpage/processor/', include('processor.urls'),name='processor')
 ]
+
